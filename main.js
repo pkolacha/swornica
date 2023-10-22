@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
   
 
 
-  
+  //karuzela
   const carousel = document.querySelector(".carousel"),
   firstImg = carousel.querySelectorAll("img")[0],
   arrowIcons = document.querySelectorAll(".wrapper i");
@@ -99,3 +99,18 @@ window.addEventListener("load", () => {
   
   document.addEventListener("mouseup", dragStop);
   carousel.addEventListener("touchend", dragStop);
+
+
+
+//tabela
+  function showMe(value){
+    if(value=="a"){
+        document.getElementById('x').style.display="block";
+        document.getElementById('y').style.display="none";
+    }
+
+    if(value=="b"){
+        document.getElementById('x').style.display="none";
+        document.getElementById('y').style.display="block";
+    }
+}
